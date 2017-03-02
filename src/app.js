@@ -1,11 +1,7 @@
-class Teste {
-    constructor(nome) {
-        this.nome = nome;
-    }
-    toString() {
-        return this.nome;
-    }
-}
+import Matematica from './util';
 
-let t = new Teste("Fulano");
-console.log(t.toString());
+let m = new Matematica();
+let raio = 10;
+let area = m.area(raio);
+
+console.log('Área do Circulo ', area);
